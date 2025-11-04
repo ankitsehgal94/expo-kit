@@ -2,6 +2,7 @@ import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
+import { Text } from '@/components/nativewindui/Text';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -18,7 +19,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+      <Text className="text-red-500 text-center text-sm font-medium tracking-wider">Welcome!</Text>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
