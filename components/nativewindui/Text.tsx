@@ -4,7 +4,7 @@ import { Text as RNText } from 'react-native';
 
 import { cn } from '@/lib/cn';
 
-const textVariants = cva('text-foreground', {
+const textVariants = cva('text-foreground dark:text-foreground-dark', {
   variants: {
     variant: {
       largeTitle: 'text-4xl',
@@ -21,9 +21,9 @@ const textVariants = cva('text-foreground', {
     },
     color: {
       primary: '',
-      secondary: 'text-secondary-foreground/90',
-      tertiary: 'text-muted-foreground/90',
-      quarternary: 'text-muted-foreground/50',
+      secondary: 'text-muted-foreground/90 dark:text-muted-foreground-dark/90',
+      tertiary: 'text-muted-foreground/70 dark:text-muted-foreground-dark/70',
+      quarternary: 'text-muted-foreground/50 dark:text-muted-foreground-dark/50',
     },
   },
   defaultVariants: {
